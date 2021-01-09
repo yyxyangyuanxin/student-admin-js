@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 头部 -->
+        <div class="header">
+            <img src="./images/logo.png" alt="">
+            <span>广州科技</span>
+        </div>
+        <!-- 左边菜单 -->
+        <div class="menu">
+            <dl>
+                <dt>学生管理</dt>
+                <dd class="active" data-id="student-list">学生列表</dd>
+                <dd data-id="add-student">新增学生</dd>
+            </dl>
+        </div>
+        <!-- 学生列表 -->
+        <div id="student-list" class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>邮箱</th>
+                        <th>年龄</th>
+                        <th>手机号</th>
+                        <th>住址</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <!-- 新增学生 -->
+        <div id="add-student" class="container">
+            <form action="" id="add-student-form">
+                <!-- 姓名 -->
+                <div>
+                    <label for="addName">姓名</label>
+                    <input type="text" name="name" id="addName">
+                </div>
+                <!-- 性别 -->
+                <div>
+                    <label>性别</label>
+                    <input type="radio" value="0" id="addMale" name="sex" checked>
+                    <label class="sex" for="addMale">男</label>
+                    <input type="radio" value="1" id="addFemale" name="sex">
+                    <label class="sex" for="addFemale">女</label>
+                </div>
+                <!-- 学号 -->
+                <div>
+                    <label for="addSNo">学号</label>
+                    <input type="text" id="addSNo" name="sNo">
+                </div>
+                <!-- 邮箱 -->
+                <div>
+                    <label for="addEmail">邮箱</label>
+                    <input type="text" id="addEmail" name="email">
+                </div>
+                <!-- 出生年 -->
+                <div>
+                    <label for="addBirth">出生年</label>
+                    <input type="text" id="addBirth" name="birth">
+                </div>
+                <!-- 手机号 -->
+                <div>
+                    <label for="addPhoneNum">手机号</label>
+                    <input type="text" id="addPhoneNum" name="phone">
+                </div>
+                <!-- 住址 -->
+                <div>
+                    <label for="addAddress">住址</label>
+                    <input type="text" id="addAddress" name="address">
+                </div>
+                <div class="btn-wrap">
+                    <!-- 提交 -->
+                    <input type="submit" class="btn add-submit" value="提交">
+                    <!-- 重置 -->
+                    <input type="reset" class="btn" value="重置">
+                </div>
+            </form>
+        </div>
+        <div id="modal">
+            <div class="modal-content">
+                <h3>编辑表单</h3>
+                <form action="" class="modal-form">
+                    <!-- 姓名 -->
+                    <div>
+                        <label for="name">姓名</label>
+                        <input type="text" id="name">
+                    </div>
+                    <!-- 性别 -->
+                    <div>
+                        <label>性别</label>
+                        <input type="radio" id="male" name="sex">
+                        <label class="sex" for="male" value="0">男</label>
+                        <input type="radio" id="female" name="sex">
+                        <label class="sex" for="female" value="1">女</label>
+                    </div>
+                    <!-- 学号 -->
+                    <div>
+                        <label for="sNo">学号</label>
+                        <input type="text" id="sNo">
+                    </div>
+                    <!-- 邮箱 -->
+                    <div>
+                        <label for="email">邮箱</label>
+                        <input type="text" id="email">
+                    </div>
+                    <!-- 出生年 -->
+                    <div>
+                        <label for="birth">出生年</label>
+                        <input type="text" id="birth">
+                    </div>
+                    <!-- 手机号 -->
+                    <div>
+                        <label for="phoneNum">手机号</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <!-- 住址 -->
+                    <div>
+                        <label for="address">住址</label>
+                        <input type="text" id="address">
+                    </div>
+                    <div>
+                        <!-- 提交 -->
+                        <input type="submit" class="modal-btn" value="提交">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

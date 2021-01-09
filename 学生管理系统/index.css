@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,
+body,
+#wrapper{
+    height: 100%;
+}
+#wrapper .header{
+    height: 70px;
+    line-height: 70px;
+    color: #b3bcc5;
+    font-size: 14px;
+    background-color: #354457;
+}
+#wrapper .header img{
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+#wrapper .menu{
+    float: left;
+    width: 200px;
+    height: calc(100% - 70px);
+    background-color: #4d5e70;
+}
+#wrapper .menu dt,
+#wrapper .menu dd{
+    height: 40px;
+    line-height: 40px;
+    color: #b3bcc5;
+    font-size: 14px;
+}
+#wrapper .menu dt{
+    padding-left: 10px;
+}
+#wrapper .menu dd{
+    padding-left: 20px;
+    cursor: pointer;
+}
+#wrapper .menu dd:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #354457;
+}
+#wrapper .menu dd.active{
+    background: #ddd;
+    color: #354457;
+}
+#wrapper #student-list{
+    height: calc(100% - 70px);
+    /* display: none; */
+}
+#wrapper #student-list table{
+    background: #eee;
+    width: calc(100% - 200px);
+}
+#wrapper #student-list table thead{
+    background-color: #e3e8ee;
+}
+#wrapper #student-list table tbody{
+    background: #fff;
+}
+#wrapper #student-list tr{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#wrapper #student-list table .btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+#wrapper #student-list td .edit{
+    background-color: #5cb85c;
+}
+#wrapper #student-list td .delete{
+    background-color: #d9534f;
+}
+#wrapper #add-student{
+    background: #eee;
+    height: 100%;
+    width: calc(100% - 200px);
+    float: right;
+    height: calc(100% - 70px)
+}
+#wrapper #add-student{
+    display: none;
+}
+#wrapper #add-student form{
+    width: 450px;
+    margin: 50px auto 0;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+}
+#wrapper #add-student form div{
+    margin: 10px 0 0 0;
+}
+#wrapper #add-student form div label{
+    width: 50px;
+    display: inline-block;
+    text-align: end;
+    margin-right: 10px;
+}
+#wrapper #add-student form div .sex{
+    width: auto;
+}
+#wrapper #add-student form div.btn-wrap{
+    margin-left: 60px;
+}
+#wrapper #add-student form .btn{
+    margin: 10px auto 0;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+#modal::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+}
+#modal .modal-content{
+    width: 420px;
+    height: 380px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -170px;
+}
+#modal .modal-content h3{
+    margin: 10px 0 0 20px;
+}
+#modal .modal-content form{
+    margin: 45px 0 0 70px;
+}
+#modal .modal-content div{
+    margin-bottom: 5px;
+}
+#modal .modal-content form label{
+    width: 60px;
+    display: inline-block;
+    text-align: end;
+    margin-right: 10px;
+}
+#modal .modal-content .sex{
+    width: auto;
+}
+#modal .modal-content form input[type="submit"]{
+    padding: 5px 68px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
